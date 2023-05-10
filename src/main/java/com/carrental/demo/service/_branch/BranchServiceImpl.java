@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BranchServiceImpl{
+public class BranchServiceImpl {
 
     private final BranchRepository branchRepository;
 
@@ -14,10 +14,5 @@ public class BranchServiceImpl{
     public BranchServiceImpl(BranchRepository branchRepository) {
         this.branchRepository = branchRepository;
     }
-
-    public Branch addBranch() {
-        branchRepository.save()
-    }
-
 
 }
