@@ -20,8 +20,9 @@ public class Branch {
     private String city;
     private String address;
 
-    private List<Employee> employees;
-
-    private List<Car> cars;
+//    @OneToMany
+//    private List<Employee> employees;
+//
+//    private List<Car> cars;
 
 }
