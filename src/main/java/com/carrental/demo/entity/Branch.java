@@ -20,8 +20,13 @@ public class Branch {
     private String city;
     private String address;
 
-//    @OneToMany
-//    private List<Employee> employees;
+/**
+* Using @JoinColumn annotation will tell JPA that the EMPLOYEE table must have a foreign key column BRANCH_ID that
+* references the BRANCH table's ID column.
+*/
+    @OneToMany
+    @JoinColumn(name = "BRANCH_ID", referencedColumnName = "ID")
+    private List<Employee> employees;
 //
 //    private List<Car> cars;
 

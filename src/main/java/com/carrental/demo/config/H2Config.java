@@ -1,4 +1,4 @@
-package com.carrental.demo;
+package com.carrental.demo.config;
 
 import org.h2.tools.Server;
 import org.springframework.context.annotation.Bean;

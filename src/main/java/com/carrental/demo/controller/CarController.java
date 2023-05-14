@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cars")
+//@RequestMapping("/cars")
 public class CarController {
 
     private CarServiceImpl carService;
@@ -21,6 +21,6 @@ public class CarController {
         this.carService = carService;
     }
 
-    @GetMapping
-    public List<Car> findAll() {return carService.findAll();}
+//    @GetMapping
+//    public List<Car> findAll() {return carService.findAll();}
 }

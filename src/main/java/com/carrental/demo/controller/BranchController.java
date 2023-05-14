@@ -18,15 +18,27 @@ public class BranchController {
         this.branchService = branchService;
     }
 
-    @GetMapping
-    public List<Branch> findAll() {
-        return branchService.findAll();
+    @GetMapping("/best")
+    public List<Branch> bestBranches(){
+        Branch branch1 = branchService.findById(1);
+        Branch branch2 = branchService.findById(2);
+        return List.of(branch1,branch2);
     }
 
-    //obczaic czemu setId na 0
-    @PostMapping
-    public Branch save(@RequestBody Branch branch) {
-        branch.setId(0);
-        return branchService.save(branch);
-    }
+//    @GetMapping
+//    public List<Branch> findAll() {
+//        return branchService.findAll();
+//    }
+//
+//    //obczaic czemu setId na 0
+//    @PostMapping
+//    public Branch save(@RequestBody Branch branch) {
+//        branch.setId(0);
+//        return branchService.save(branch);
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public void deleteById(@PathVariable int id) {
+//        branchService.deleteById(id);
+//    }
 }
