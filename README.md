@@ -52,7 +52,7 @@ Here you can use different requests (GET, POST, PUT, DELETE).
 ```bash
 http://localhost:8080/h2-console
 ```
-And put login credentials as mentioned in application.properties file.
+And put login credentials as mentioned in [application.properties](https://github.com/moRR3no/Car-Rental-API/blob/master/src/main/resources/application.properties) file.
 
 ## Version control: 
 - system: GIT
